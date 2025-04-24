@@ -14,7 +14,6 @@ const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 const webp = require('gulp-webp');
 const webpHtml = require('gulp-webp-html');
-const webpCss = require('gulp-webp-css');
 
 gulp.task('clean:dev', function (done) {
 	if (fs.existsSync('./build/')) {
@@ -56,13 +55,11 @@ gulp.task('sass:dev', function () {
 	return (
 		gulp
 			.src('./src/scss/*.scss')
-			.pipe(changed('./build/css/'))
 			.pipe(plumber(plumberNotify('SCSS')))
 			.pipe(sourceMaps.init())
 			.pipe(sassGlob())
-			.pipe(sass())
+			.pipe(sass().on('error', sass.logError))
 			.pipe(sourceMaps.write())
-			.pipe(webpCss())
 			.pipe(gulp.dest('./build/css/'))
 	);
 });
