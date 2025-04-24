@@ -1,0 +1,72 @@
+Команда для встановлення всіх пакетів:
+npm i gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps gulp-plumber
+
+Опис пакетів:
+gulp - власне Gulp
+gulp-sass - Складання SASS / SCSS
+sass - Необхідний для збирання SASS/SCSS
+gulp-file-include - Підключення файлів один до одного. HTML include
+gulp-clean - Видалення файлів
+gulp-server-livereload - Сервер з автооновленням сторінки
+gulp-sourcemaps - Вихідні картки для CSS
+gulp-plumber - Фікс помилок при складанні
+gulp-notify - Нотифікації
+gulp-group-css-media-queries - Угруповання CSS медіа запитів
+
+----------------------------------------------------------------------
+
+Складання скриптів. webpack, babel
+
+Встановлення babel:
+npm i gulp-babel @babel/core @babel/preset-env
+
+- JS таск
+- Налаштування package-json
+
+----------------------------------------------------------------------
+
+Встановлення webpack:
+npm i webpack-stream style-loader css-loader --save-dev
+
+- JS таск
+- webpack конфіг
+- приклад файлів із модулями
+
+Приклад з datepicker:
+npm i air-datepicker -S
+
+
+JS:
+import AirDatepicker від 'air-datepicker';
+import 'air-datepicker/air-datepicker.css';
+
+document.addEventListener('DOMContentLoaded', () => { 
+new AirDatepicker('#my-element');
+});
+
+HTML:
+<input type="text" id="my-element">
+
+----------------------------------------------------------------------
+
+Зображення:
+npm i gulp-imagemin@7 --save-dev
+
+.pipe(imagemin({ verbose: true }))
+
+
+----------------------------------------------------------------------
+
+Прискорення збирання
+
+npm install --save-dev gulp-changed
+
+- Використання в картинках, HTML, JS, CSS
+
+
+----------------------------------------------------------------------
+
+
+web-p
+
+npm i gulp-webp gulp-webp-html gulp-webp-css --save-dev
