@@ -4,12 +4,206 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
+		<title>Cropia</title>
+        <style>
+            .main-header {
+                background: #fff;
+                border-bottom: 1px solid #f0f0f0;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                width: 100%;
+                height: 80px;
+                min-height: 80px;
+                max-height: 80px;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .header-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            .logo-img {
+                height: 40px;
+                width: auto;
+                display: block;
+                max-height: 40px;
+            }
+            .nav-menu {
+                display: flex;
+                gap: 2.2rem;
+            }
+            .nav-link {
+                text-decoration: none;
+                color: #222;
+                font-size: 17px;
+                transition: color 0.2s;
+                font-weight: 500;
+            }
+            .nav-link:hover {
+                color: #4CAF50;
+            }
+            .lang-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 140px;
+                user-select: none;
+            }
+            .lang-toggle-labels {
+                display: flex;
+                position: relative;
+                background: #e0e0e0;
+                border-radius: 20px;
+                padding: 2px 4px;
+                width: 138px;
+                height: 34px;
+            }
+            .lang-toggle-label {
+                flex: 1;
+                text-align: center;
+                font-size: 17px;
+                color: #222;
+                font-weight: 600;
+                line-height: 30px;
+                z-index: 2;
+                cursor: pointer;
+                transition: color 0.2s;
+                border-radius: 16px;
+                position: relative;
+            }
+            .lang-toggle-slider {
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 42px;
+                height: 30px;
+                border-radius: 16px;
+                background: #4CAF50;
+                transition: left 0.25s cubic-bezier(0.4,0,0.2,1);
+                z-index: 1;
+            }
+            #lang-en:checked ~ .lang-toggle-labels .lang-toggle-slider {
+                left: 48px;
+            }
+            #lang-es:checked ~ .lang-toggle-labels .lang-toggle-slider {
+                left: 92px;
+            }
+            #lang-ua:checked ~ .lang-toggle-labels .lang-toggle-slider {
+                left: 2px;
+            }
+            #lang-ua:checked ~ .lang-toggle-labels label[for="lang-ua"],
+            #lang-en:checked ~ .lang-toggle-labels label[for="lang-en"],
+            #lang-es:checked ~ .lang-toggle-labels label[for="lang-es"] {
+                color: #fff;
+            }
+            @media (max-width: 600px) {
+                .lang-toggle-labels {
+                    width: 110px;
+                    height: 27px;
+                    padding: 2px 2px;
+                }
+                .lang-toggle-slider {
+                    width: 32px;
+                    height: 23px;
+                }
+                .lang-toggle-label {
+                    font-size: 15px;
+                    line-height: 21px;
+                }
+                #lang-en:checked ~ .lang-toggle-labels .lang-toggle-slider {
+                    left: 38px;
+                }
+                #lang-ua:checked ~ .lang-toggle-labels .lang-toggle-slider {
+                    left: 2px;
+                }
+            }
+            @media (max-width: 900px) {
+                .header-container {
+                    padding: 0 24px;
+                }
+                .nav-menu {
+                    gap: 1.2rem;
+                }
+            }
+            @media (max-width: 600px) {
+                .main-header {
+                    height: 56px;
+                    min-height: 56px;
+                    max-height: 56px;
+                }
+                .header-container {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.5rem;
+                    padding: 0 16px;
+                    height: 100%;
+                }
+                .logo-img {
+                    height: 28px;
+                    max-height: 28px;
+                }
+                .nav-menu {
+                    gap: 0.6rem;
+                }
+                .nav-link, .lang-switch {
+                    font-size: 15px;
+                }
+                .lang-switch {
+                    padding: 0.4rem 1rem;
+                }
+            }
+        </style>
 	</head>
 	<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+    <img src="../img/logo.png" alt="CROPIA Logo" class="logo-img">
+</div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">Головна</a>
+                <a href="#" class="nav-link">Про компанію</a>
+                <a href="#" class="nav-link">Послуги</a>
+                <a href="#" class="nav-link">Новини</a>
+                <a href="#" class="nav-link">Контакти</a>
+            </nav>
+            <div class="lang-toggle">
+  <input type="radio" name="lang" id="lang-ua" value="ua" checked hidden>
+  <input type="radio" name="lang" id="lang-en" value="en" hidden>
+  <input type="radio" name="lang" id="lang-es" value="es" hidden>
+  <div class="lang-toggle-labels">
+    <label for="lang-ua" class="lang-toggle-label" data-lang="ua">UA</label>
+    <label for="lang-en" class="lang-toggle-label" data-lang="en">EN</label>
+    <label for="lang-es" class="lang-toggle-label" data-lang="es">ES</label>
+    <div class="lang-toggle-slider"></div>
+  </div>
+</div>
+        </div>
+    </header>
+    <!-- Основні стилі винесені у css/main.css -->
+    <!-- Логіка перемикання мов винесена у js/lang-toggle.js -->
+
 		@@include('blocks/header.html')
 		@@include('blocks/footer.html')
+        <script>
+            // Логіка перемикача мов
+            const langRadios = document.querySelectorAll('input[name="lang"]');
+            langRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    // Тут можна додати зміну мови сайту
+                    // this.value — вибрана мова
+                });
+            });
+        </script>
 		<script src="./js/index.bundle.js"></script>
-	</body>
+    </body>
 </html>
