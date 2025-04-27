@@ -8,3 +8,19 @@
 		align-items: center;
 	}
 }
+
+// Шапка поверх відео
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10;
+  background: rgba(255,255,255,0.9); // напівпрозорий фон для читабельності
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+// Додати відступ для контенту під шапкою
+body {
+  padding-top: 80px; // або висота вашої шапки
+}

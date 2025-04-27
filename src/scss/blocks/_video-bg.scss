@@ -1,8 +1,9 @@
 /* --- Video Background Section --- */
+body {
+  overflow-x: hidden;
+}
 .video-bg-section {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100vw;
   height: 100vh;
   z-index: 1;
@@ -13,12 +14,12 @@
 }
 
 .video-bg-wrapper {
+  position: relative;
   width: 100vw;
   height: 100vh;
   margin: 0;
   border-radius: 0;
   overflow: hidden;
-  background: #000;
   display: block;
   box-shadow: none;
   border: none;
@@ -40,12 +41,13 @@
   border-radius: 0;
 }
 
+//Затемнення 
 .video-bg__overlay {
   position: absolute;
   top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.70);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.50);
   z-index: 2;
   pointer-events: none;
 }
@@ -63,46 +65,7 @@
   }
 }
 
-// Шапка поверх відео
-.main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 10;
-  background: rgba(255,255,255,0.9); // напівпрозорий фон для читабельності
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
 
-// Додати відступ для контенту під шапкою
-body {
-  padding-top: 80px; // або висота вашої шапки
-}
-
-@media (max-width: 900px) {
-  .video-bg-section {
-    padding: 0;
-  }
-  .video-bg {
-    border-radius: 0;
-  }
-  .video-bg-wrapper {
-    border-radius: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .video-bg-section {
-    padding: 0 10px;
-  }
-  .video-bg {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  .video-bg-wrapper {
-    border-radius: 10px;
-  }
-}
 .video-bg__content {
   position: absolute;
   top: 50%;
@@ -126,7 +89,7 @@ body {
     font-size: 1.25rem;
     margin-bottom: 2.1rem;
     line-height: 1.6;
-    text-shadow: 0 1px 10px rgba(0,0,0,0.18);
+    text-shadow: 0 1px 10px rgba(0,0,0,0.25);
   }
 }
 
