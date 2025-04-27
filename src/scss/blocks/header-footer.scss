@@ -60,6 +60,9 @@
 
 .nav-link:hover {
     color:#DD2476;
+    transform: scale(1.14);
+    font-weight: 700;
+    transition: color 0.2s, transform 0.18s cubic-bezier(.55,1.6,.47,.67), font-weight 0.15s;
 }
 .lang-toggle {
     display: flex;
