@@ -1,32 +1,74 @@
 /* --- Video Background Section --- */
 .video-bg-section {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  margin: 40px 0;
+  height: 100vh;
+  z-index: 1;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: block;
+  overflow: hidden;
 }
 
 .video-bg-wrapper {
-  max-width: 1000px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   background: #000;
   display: block;
-  border: 2px dashed #4CAF50; /* Діагностична рамка, можна потім видалити */
+  box-shadow: none;
+  border: none;
 }
 
 .video-bg {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   display: block;
   object-fit: cover;
-  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0;
 }
+
+// Приховати діагностичну рамку, зробити адаптивно
+@media (max-width: 900px) {
+  .video-bg-section {
+    padding: 0;
+  }
+  .video-bg {
+    border-radius: 0;
+  }
+  .video-bg-wrapper {
+    border-radius: 0;
+  }
+}
+
+// Шапка поверх відео
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10;
+  background: rgba(255,255,255,0.9); // напівпрозорий фон для читабельності
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+// Додати відступ для контенту під шапкою
+body {
+  padding-top: 80px; // або висота вашої шапки
+}
+
 @media (max-width: 900px) {
   .video-bg-section {
     padding: 0 10px;
