@@ -47,7 +47,7 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.50);
+  background: rgba(0, 0, 0, 0.75); // посилене затемнення
   z-index: 2;
   pointer-events: none;
 }
@@ -78,20 +78,54 @@ body {
   width: 90vw;
   padding: 32px 24px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  min-height: 340px;
+  max-height: 340px;
   h1 {
+    height: 170px;
+    min-height: 170px;
+    max-height: 170px;
     font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
     line-height: 1.15;
     text-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    word-break: break-word;
+    white-space: normal;
+    hyphens: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
   }
   p {
     font-size: 1.25rem;
     margin-bottom: 2.1rem;
     line-height: 1.6;
     text-shadow: 0 1px 10px rgba(0,0,0,0.25);
+    min-height: 54px;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
   }
 }
+
+body.lang-en .video-bg__content h1 {
+  font-size: 2.3rem;
+}
+
+
 
 .video-bg__buttons {
   display: flex;
@@ -99,16 +133,26 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   .btn {
-    padding: 0.9em 2.2em;
-    font-size: 1.08rem;
+    width: 240px;
+    min-width: 240px;
+    max-width: 280px;
+    height: 52px;
+    padding: 0;
+    font-size: 1.18rem;
     border-radius: 32px;
     border: none;
     cursor: pointer;
     font-weight: 600;
     transition: background 0.2s, color 0.2s;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
   }
   .btn--primary {
     background: #7bb93c;

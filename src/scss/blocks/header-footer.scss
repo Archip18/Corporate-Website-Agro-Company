@@ -46,7 +46,9 @@
     font-weight: 500;
 }
 .nav-link {
-    width: 140px; /* підібрати під найдовший переклад, наприклад, "Sobre la empresa" */
+    min-width: 160px; /* запас під найдовший переклад */
+    max-width: 210px;
+    width: 100%;
     text-align: center;
     display: block;
     white-space: nowrap;
@@ -55,11 +57,13 @@
     font-size: 17px;
     transition: color 0.2s;
     font-weight: 500;
-    margin: 0 8px; /* проміжок між пунктами */
+    margin: 0 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .nav-link:hover {
-    color:#DD2476;
+    color:#5fd17a;
     transform: scale(1.14);
     font-weight: 700;
     transition: color 0.2s, transform 0.18s cubic-bezier(.55,1.6,.47,.67), font-weight 0.15s;
@@ -100,7 +104,7 @@
     width: 42px;
     height: 30px;
     border-radius: 16px;
-    background: #DD2476;
+    background: #4CAF50;
     transition: left 0.25s cubic-bezier(0.4,0,0.2,1);
     z-index: 1;
 }
