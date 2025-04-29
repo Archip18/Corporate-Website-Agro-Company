@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Забезпечення якісною продукцією',
             'card3-desc': 'Ми постачаємо насіння та добрива найвищої якості.',
             'footer-text': '© 2025 Cropia. Всі права захищені.',
+            'footer-contacts-title': 'Контакти',
+            'footer-address-label': 'Адреса:',
+            'footer-phone-label': 'Телефон:',
+            'footer-email-label': 'Email:',
             lang: {
                 ua: 'УКР',
                 en: 'АНГЛ',
@@ -48,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Supplying quality products',
             'card3-desc': 'We supply the highest quality seeds and fertilizers.',
             'footer-text': '© 2025 Cropia. All rights reserved.',
+            'footer-contacts-title': 'Contacts',
+            'footer-address-label': 'Address:',
+            'footer-phone-label': 'Phone:',
+            'footer-email-label': 'Email:',
             lang: {
                 ua: 'UA',
                 en: 'EN',
@@ -73,6 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Suministro de productos de calidad',
             'card3-desc': 'Suministramos semillas y fertilizantes de la más alta calidad.',
             'footer-text': '© 2025 Cropia. Todos los derechos reservados.',
+            'footer-contacts-title': 'Contactos',
+            'footer-address-label': 'Dirección:',
+            'footer-phone-label': 'Teléfono:',
+            'footer-email-label': 'Email:',
             lang: {
                 ua: 'UA',
                 en: 'EN',
