@@ -59,6 +59,54 @@
   margin-top: -20px; 
 }
 
+.footer__contacts-btn {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: 1.05;
+  color: #fff;
+  text-align: center;
+  user-select: none;
+  white-space: pre-line;
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: relative;
+  top: -10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: 0;
+}
+
+.footer__contacts-btn:hover, .footer__contacts-btn:focus {
+  color: #00c853;
+  transform: scale(1.5);
+  font-size: 18px;
+}
+
+.footer__contacts-vertical-title { // залишено для інших випадків
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.05;
+  color: #fff;
+  text-align: center;
+  user-select: none;
+  white-space: pre-line;
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: relative;
+  top: -10px;
+}
+
+.footer__contacts-vertical-title:hover, .footer__contacts-btn:hover,
+.footer__contacts-vertical-title:focus, .footer__contacts-btn:focus {
+  color: #00c853;
+  transform: scale(1.15);
+}
+
 .footer__contacts-vertical-title {
   font-size: 18px;
   font-weight: 700;
