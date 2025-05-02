@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Забезпечення якісною продукцією',
             'card3-desc': 'Ми постачаємо насіння та добрива найвищої якості.',
             'footer-text': '© 2025 Cropia. Всі права захищені.',
-            'footer-contacts-title': 'Контакти',
+            'footer-contacts-title': 'К<br>О<br>Н<br>Т<br>А<br>К<br>Т<br>И',
             'footer-address-label': 'Адреса:',
             'footer-phone-label': 'Телефон:',
             'footer-email-label': 'Email:',
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Supplying quality products',
             'card3-desc': 'We supply the highest quality seeds and fertilizers.',
             'footer-text': '© 2025 Cropia. All rights reserved.',
-            'footer-contacts-title': 'Contacts',
+            'footer-contacts-title': 'C<br>O<br>N<br>T<br>A<br>C<br>T<br>S',
             'footer-address-label': 'Address:',
             'footer-phone-label': 'Phone:',
             'footer-email-label': 'Email:',
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Suministro de productos de calidad',
             'card3-desc': 'Suministramos semillas y fertilizantes de la más alta calidad.',
             'footer-text': '© 2025 Cropia. Todos los derechos reservados.',
-            'footer-contacts-title': 'Contactos',
+            'footer-contacts-title': 'C<br>O<br>N<br>T<br>A<br>C<br>T<br>O',
             'footer-address-label': 'Dirección:',
             'footer-phone-label': 'Teléfono:',
             'footer-email-label': 'Email:',
@@ -97,7 +97,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
-                el.textContent = translations[lang][key];
+                if (key === 'footer-contacts-title') {
+                    el.innerHTML = translations[lang][key];
+                } else {
+                    el.textContent = translations[lang][key];
+                }
             }
         }); // Кнопки мов не перекладаємо
     }
