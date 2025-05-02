@@ -20,9 +20,13 @@
   a {
     color: inherit;
     text-decoration: none;
-    transition: none;
-    cursor: default;
-    pointer-events: none;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  a.footer__contacts-btn {
+    cursor: pointer;
+    pointer-events: auto;
   }
   
 
@@ -78,6 +82,7 @@
   transition: color 0.3s, transform 0.3s;
   display: inline-block;
   padding: 0;
+  pointer-events: auto;
 }
 
 .footer__contacts-btn:hover, .footer__contacts-btn:focus {
