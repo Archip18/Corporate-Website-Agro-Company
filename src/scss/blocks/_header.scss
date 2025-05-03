@@ -1,6 +1,6 @@
 .header {
 	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
+	padding: 0; // Відступи зверху і знизу прибрані
 
 	&__row {
 		display: flex;
@@ -9,18 +9,15 @@
 	}
 }
 
-// Шапка поверх відео
 .main-header {
-  // position: fixed; // закоментовано для відключення прикріплення шапки
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 10;
-  background: rgba(255,255,255,0.9); // напівпрозорий фон для читабельності
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-// Додати відступ для контенту під шапкою
 body {
-  // padding-top: 80px; // закоментовано, бо шапка не фіксована
-}
+  padding-top: 0;
+} // Відступ зверху прибраний
