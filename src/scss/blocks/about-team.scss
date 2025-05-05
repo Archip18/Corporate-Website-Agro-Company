@@ -1,0 +1,96 @@
+// Секція "Наша команда" — стилі для about-team
+.about-team {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 56px 72px 56px 72px;
+  margin: 64px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.about-team__photo {
+  width: 750px;
+  max-width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 36px #e0e0e0, 0 2px 8px #e0e0e0;
+  margin-left: -48px;
+  flex-shrink: 0;
+  background: #fafbfc;
+}
+
+
+.about-team__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8px;
+}
+
+.about-team__title {
+  font-size: 2.4rem;
+  margin-bottom: 28px;
+  color: #191919;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2.5px solid #bdbdbd;
+  padding-bottom: 10px;
+}
+.about-team__title::before {
+  content: '\1F465'; /* 👥 */
+  font-size: 2.1rem;
+  margin-right: 8px;
+  opacity: 0.85;
+}
+
+
+.about-team__content p {
+  color: #191919;
+  font-size: 1.06rem;
+  margin-bottom: 22px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 900px) {
+  .about-team {
+    flex-direction: column;
+    padding: 24px 6vw 28px 6vw;
+    gap: 12px;
+    margin: 36px 0;
+  }
+  .about-team__photo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    border-radius: 18px 18px 0 0;
+    display: block;
+    box-shadow: 0 6px 24px #e0e0e0;
+  }
+  .about-team__content {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .about-team__title {
+    font-size: 1.6rem;
+    padding-bottom: 7px;
+    margin-bottom: 18px;
+  }
+  .about-team__title::before {
+    font-size: 1.3rem;
+  }
+  .about-team__content p {
+    font-size: 0.97rem;
+    margin-bottom: 13px;
+  }
+}
+

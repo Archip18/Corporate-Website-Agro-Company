@@ -1,0 +1,276 @@
+.about-company {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  margin: 16px 0 40px 4px;
+}
+
+.about-company__photo {
+  margin-left: 0;
+  padding-left: 0;
+  display: block;
+}
+
+.about-company__photo {
+  flex: 0 0 650px;
+  max-width: 650px;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  object-fit: cover;
+  margin-left: 0;
+  padding-left: 0;
+  display: block;
+}
+
+.about-company__content {
+  flex: 1;
+  background: #fff;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 40px 56px 48px 56px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-self: stretch;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  line-height: 1.85;
+  font-size: 1.18rem;
+  border-left: none;
+  background: #fff;
+  border-image: none;
+}
+
+.about-company {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.about-company__photo {
+  margin-right: 0;
+} 
+
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 6px 0 16px 0;
+  color: #191919;
+  letter-spacing: 1px;
+}
+
+/* @keyframes about-fade-in видалено */
+
+.about-company__content p {
+  margin-bottom: 18px;
+  font-size: 1.18rem;
+  color: #191919;
+  border-radius: 8px;
+  padding: 3px 4px 3px 8px;
+}
+
+.about-company__content,
+.about-company__content h1,
+.about-company__content h2,
+.about-company__content h3,
+.about-company__content h4,
+.about-company__content h5,
+.about-company__content h6,
+.about-company__content a {
+  color: #191919 !important;
+}
+
+
+/* .about-company__content p:hover видалено */
+
+/* .about-company__content p:first-child:hover, видалено */
+/* .about-company__content p:first-child:hover strong, видалено */
+/* .about-company__content p:first-child:hover b, видалено */
+/* .about-company__content p:first-child:hover span { видалено */
+
+.about-company__content p:first-child {
+  font-weight: 500;
+  color: #191919;
+  font-size: 1.16rem;
+  letter-spacing: 0.01em;
+  border-left: none;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+}
+.about-company__content p:first-child strong,
+.about-company__content p:first-child b,
+.about-company__content p:first-child span {
+  color: #191919 !important;
+}
+.about-company__content p:first-child::before {
+  content: "\1F331";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  margin-right: 3px;
+  vertical-align: middle;
+  opacity: 1;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #fff;
+  color: #191919;
+  box-shadow: 0 2px 8px #b7f3d1;
+  border: 2px solid #2bb673;
+}
+
+/* Видалені всі glow, підсвічування, scale, filter, hover-ефекти */
+
+/* .about-company__content p:first-child:hover, видалено */
+/* .about-company__content p:first-child:hover::before, видалено */
+/* .about-company__content p:first-child:focus::before, видалено */
+/* .about-company__content p:first-child:active::before, видалено */
+/* .about-company__content p:first-child:hover:not(:focus)::before { видалено */
+
+/* .about-company__content p:first-child:hover::before { видалено */
+/* .about-company__content p:first-child:hover { видалено */
+/* .about-company__content p:first-child:hover { видалено */
+
+/* @keyframes pulse-glow видалено */
+
+/* @keyframes about-icon-pop видалено */
+
+/* @keyframes about-icon-sway видалено */
+
+
+
+.about-company__content p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-company__content p:last-child {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: normal;
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  color: #191919;
+  font-size: 1.05em;
+  line-height: 1.7;
+  display: block;
+}
+
+.about-company__content strong, .about-company__content b {
+  color: #191919;
+  font-weight: 700;
+  background: linear-gradient(90deg,#e0f7eb 60%,transparent 100%);
+  border-radius: 4px;
+  padding: 0 2px;
+  box-shadow: 0 1px 0 #e0e0e0;
+}
+
+.about-company__content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 22px;
+  font-weight: 900;
+  color: #191919;
+  border-bottom: 2.5px solid #bdbdbd;
+  padding-bottom: 10px;
+  letter-spacing: 0.7px;
+  text-shadow: none;
+}
+
+
+.about-company__content:hover {
+  box-shadow: 0 8px 28px #e0e0e0, 0 2px 12px #e0e0e0;
+  background: #fff;
+}
+
+.about-company__content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 22px;
+  font-weight: 800;
+  color: #191919;
+  border-bottom: 2px solid #bdbdbd;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.about-company__content p {
+  margin-bottom: 18px;
+  font-size: 1.18rem;
+  color: #191919;
+  transition: color 0.3s;
+}
+
+.about-company__content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-company__content p:first-child {
+  font-weight: 700;
+  color: #191919;
+  font-size: 1.26rem;
+  letter-spacing: 0.2px;
+}
+
+.about-company__content p:not(:first-child) {
+  color: #191919;
+}
+
+.about-company__content strong, .about-company__content b {
+  color: #191919;
+  font-weight: 700;
+  background: none;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+
+.about-company__content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #195c2e;
+}
+
+.about-company__content p {
+  margin-bottom: 18px;
+  font-size: 1.17rem;
+}
+
+.about-company__content p:first-child {
+  font-weight: 600;
+  color: #191919;
+}
+
+
+.about-company__content {
+  flex: 1;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .about-company {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .about-company__photo {
+    max-width: 100%;
+  }
+  .about-company__content {
+    width: 100%;
+  }
+}
