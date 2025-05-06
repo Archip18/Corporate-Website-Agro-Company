@@ -1,0 +1,75 @@
+// Класична пагінація
+.pagination--classic {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+  ul {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .pagination__item {
+    a {
+      display: block;
+      min-width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      border-radius: 4px;
+      background: transparent;
+      color: #182153;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+    &--active a {
+      background: #182153;
+      color: #fff;
+    }
+    &:not(.pagination__item--active) a:hover {
+      background: #e6eaf4;
+    }
+  }
+}
+
+// Кругла пагінація
+.pagination--round {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+  ul {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .pagination__item {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 2px solid #f2e6c4;
+      background: #fff;
+      color: #182153;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, border 0.2s;
+    }
+    &--active a {
+      background: #fdf2d6;
+      border-color: #fdf2d6;
+      color: #182153;
+    }
+    &:not(.pagination__item--active) a:hover {
+      border-color: #182153;
+      color: #182153;
+    }
+  }
+}
