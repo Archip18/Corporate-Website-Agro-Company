@@ -1,6 +1,10 @@
 
 
 .contacts-info {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease 0.4s forwards;
+
   flex: 1 1 360px;
   max-width: 430px;
   min-width: 290px;
@@ -42,6 +46,10 @@
 }
 
 .contacts-blocks {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease 0.6s forwards;
+
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -100,6 +108,10 @@
 
 // Стилі для секції з картою
 .map-section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease 0.2s forwards;
+
   padding: 8px 0 6px 0;
   background-color: #f8f8f8;
   margin-bottom: 10px;
@@ -116,6 +128,17 @@
   background: none;
   box-shadow: none;
   padding: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 600px) {
@@ -153,6 +176,17 @@
   }
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 600px) {
   .map-container {
     padding: 0 6px;
@@ -173,6 +207,9 @@
 
 /* Styles for the contacts content layout */
 .contacts-content {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease 0.8s forwards;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

@@ -1,0 +1,103 @@
+/* Fade In */
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-fade-in.show {
+  opacity: 1;
+}
+
+/* Slide Up */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.3s, transform 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-slide-up.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* Slide Left */
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 1.3s, transform 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-slide-left.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* Zoom In */
+.animate-zoom-in {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 1.3s, transform 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-zoom-in.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Rotate In */
+.animate-rotate-in {
+  opacity: 0;
+  transition: opacity 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-rotate-in.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* Flip In */
+.animate-flip-in {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity 1.3s, transform 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+  backface-visibility: hidden;
+}
+.animate-flip-in.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* Bounce In */
+.animate-bounce-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: none;
+}
+.animate-bounce-in.show {
+  opacity: 1;
+  transform: none;
+  animation: bounce-in-anim 1.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes bounce-in-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Для сумісності зі старим класом */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: none;
+}
