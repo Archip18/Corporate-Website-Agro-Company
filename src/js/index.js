@@ -3,7 +3,7 @@ import './modules/lang-toggle.js';
 import './modules/activeMenu.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Анімація при прокручуванні для всіх ефектів
+  
   const animatedEls = document.querySelectorAll('[class*="animate-"]');
   const onScroll = () => {
     animatedEls.forEach(el => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   window.addEventListener('scroll', onScroll);
   window.addEventListener('resize', onScroll);
-  onScroll(); // запуск при завантаженні
+  onScroll();
 
 
 });

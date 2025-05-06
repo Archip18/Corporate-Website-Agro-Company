@@ -1,4 +1,3 @@
-// Модуль перемикача мов для Cropia
 
 document.addEventListener('DOMContentLoaded', function() {
     const langRadios = document.querySelectorAll('input[name="lang"]');
@@ -109,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     el.textContent = translations[lang][key];
                 }
             }
-        }); // Кнопки мов не перекладаємо
+        });
     }
 
     langRadios.forEach(radio => {
@@ -118,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Перекладаємо сторінку за замовчуванням при завантаженні
+    
     const checkedLang = document.querySelector('input[name="lang"]:checked');
     if (checkedLang) {
         translatePage(checkedLang.value);

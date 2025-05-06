@@ -1,6 +1,6 @@
 .header {
 	background-color: rgb(195, 220, 231);
-	padding: 0; // Відступи зверху і знизу прибрані
+	padding: 0; 
 
 	&__row {
 		display: flex;
@@ -20,4 +20,4 @@
 
 body {
   padding-top: 0;
-} // Відступ зверху прибраний
+} 

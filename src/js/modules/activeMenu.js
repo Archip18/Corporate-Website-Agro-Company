@@ -1,5 +1,3 @@
-// Підсвічування активного пункту меню в header
-// Додає клас .active-menu до відповідного посилання
 
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('.header__menu-link');
