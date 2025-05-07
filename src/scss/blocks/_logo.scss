@@ -3,12 +3,28 @@
     align-items: center;
     font-size: 32px;
 }
+
+@keyframes logo-pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(172,24,44,0.4); }
+  50% { transform: scale(1.08); box-shadow: 0 0 12px 4px rgba(172,24,44,0.22); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(172,24,44,0.4); }
+}
+
+.logo a:hover .logo-img, .logo a:focus .logo-img {
+  animation: logo-pulse 0.7s cubic-bezier(.4,0,.2,1) infinite;
+  transition: filter 0.2s;
+  filter: brightness(1.1) saturate(1.1);
+}
+
 .logo-img {
     height: 40px;
     width: auto;
     display: block;
     max-height: 40px;
+    background: transparent !important;
+    box-shadow: none !important;
 }
+
 @media (max-width: 600px) {
     .logo-img {
         height: 28px;

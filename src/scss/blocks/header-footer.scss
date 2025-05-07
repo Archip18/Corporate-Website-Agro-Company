@@ -64,6 +64,20 @@
   background: transparent;
   position: relative;
   padding-bottom: 8px;
+  pointer-events: none;
+  cursor: default;
+  font-weight: 600;
+}
+
+.logo a.active-menu {
+  pointer-events: none;
+  cursor: default;
+  font-weight: 600;
+}
+
+.header__menu-link.active-menu::after, .header__menu-link.current-menu-item::after {
+  height: 3px;
+  background: #222;
 }
 
 .header__menu-link.active-menu::after, .header__menu-link.current-menu-item::after {

@@ -1,9 +1,6 @@
 .animate-footer {
   transition: transform 1.5s cubic-bezier(0.4,0,0.2,1), box-shadow 1.5s cubic-bezier(0.4,0,0.2,1);
 }
-.animate-footer {
-  /* Не змінюємо дизайн */
-}
 
 @keyframes footer-pulse {
   0%   { transform: scale(1); }
