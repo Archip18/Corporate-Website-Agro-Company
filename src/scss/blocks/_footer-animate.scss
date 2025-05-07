@@ -1,0 +1,19 @@
+.animate-footer {
+  transition: transform 1.5s cubic-bezier(0.4,0,0.2,1), box-shadow 1.5s cubic-bezier(0.4,0,0.2,1);
+}
+.animate-footer {
+  /* Не змінюємо дизайн */
+}
+
+@keyframes footer-pulse {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.08); }
+  50%  { transform: scale(1.12); }
+  70%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.animate-footer.show {
+  animation: footer-pulse 0.85s cubic-bezier(0.4,0,0.2,1) 1;
+}
+

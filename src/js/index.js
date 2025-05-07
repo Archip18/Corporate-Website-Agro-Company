@@ -5,6 +5,11 @@ import './modules/activeMenu.js';
 document.addEventListener('DOMContentLoaded', () => {
   
   const animatedEls = document.querySelectorAll('[class*="animate-"]');
+  // Додаємо футер явно, якщо його немає у вибірці
+  const footer = document.querySelector('.animate-footer');
+  if (footer && ![...animatedEls].includes(footer)) {
+    animatedEls = [...animatedEls, footer];
+  }
   const onScroll = () => {
     animatedEls.forEach(el => {
       const rect = el.getBoundingClientRect();
