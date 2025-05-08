@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const onScroll = () => {
     animatedEls.forEach(el => {
       const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 60) {
+      if (rect.top < window.innerHeight - 200) {
         el.classList.add('show');
       }
     });

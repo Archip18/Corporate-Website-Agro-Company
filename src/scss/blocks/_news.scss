@@ -107,3 +107,23 @@
 .news-card-link:hover {
   color: #e60023;
 }
+
+.news-link {
+  display: inline-block;
+  background: #d32f2f;
+  color: #fff;
+  padding: 1.3vw 3.8vw;
+  border-radius: 1vw;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3vw;
+  letter-spacing: 1.5px;
+  transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(211,47,47,0.08);
+}
+.news-link:hover {
+  background: #b71c1c;
+  transform: scale(1.055);
+  box-shadow: 0 6px 18px rgba(211,47,47,0.18);
+}
+
