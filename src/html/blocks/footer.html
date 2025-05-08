@@ -8,34 +8,19 @@
       <div class="footer__contacts-item"><span class="footer__contacts-label" data-i18n="footer-address-label">Адреса:</span> м. Київ, вул. Прикладна, 1</div>
       <div class="footer__contacts-item"><span class="footer__contacts-label" data-i18n="footer-phone-label">Телефон:</span> <a href="tel:+380991112233">+38 (099) 111-22-33</a></div>
       <div class="footer__contacts-item"><span class="footer__contacts-label" data-i18n="footer-email-label">Email:</span> <a href="mailto:info@agro.com.ua">info@agro.com.ua</a></div>
+      <div class="footer__contacts-item"><span class="footer__contacts-label">Telegram:</span> <a href="https://t.me/Cropia_support" target="_blank">@Cropia_support</a></div>
       <div class="footer__contacts-item"><span class="footer__contacts-label">Графік роботи:</span> Пн-Пт з 8:00 до 19:00</div>
     </div>
   </div>
-  <div class="footer__socials-group">
-    <div class="footer__socials">
-    <a href="https://www.youtube.com/" class="footer__social" aria-label="YouTube" target="_blank">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#FF0000"/><path d="M22.7 13.1c-.2-.8-.8-1.4-1.6-1.6C19.7 11 16 11 16 11s-3.7 0-5.1.5c-.8.2-1.4.8-1.6 1.6C9 14.5 9 16 9 16s0 1.5.3 2.9c.2.8.8 1.4 1.6 1.6C12.3 21 16 21 16 21s3.7 0 5.1-.5c.8-.2 1.4-.8 1.6-1.6.3-1.4.3-2.9.3-2.9s0-1.5-.3-2.9zm-8 4.1v-4l3.5 2-3.5 2z" fill="#fff"/></svg>
-    </a>
-    <a href="https://t.me/" class="footer__social" aria-label="Telegram" target="_blank">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#229ED9"/><path d="M23.3 10.8c-.2-.2-.5-.2-.8-.1l-12 4.5c-.3.1-.5.3-.5.6s.1.6.4.7l3.1 1.2 1.2 3.8c.1.3.3.5.6.6h.2c.3 0 .5-.2.7-.4l1.7-2.3 3.1 2.3c.2.1.5.2.7.1.2-.1.4-.3.4-.6l2-8.2c.1-.3 0-.6-.2-.8zM14.3 20l-1-3.2 5.1-4.4-4.1 5.7zm1.8-2.4l-1.2 1.6-.4-1.3 1.6-.3zm1.7 1.3l-2.6-1.9 6.1-4.5-3.5 6.4z" fill="#fff"/></svg>
-    </a>
-    <a href="https://x.com/" class="footer__social" aria-label="X" target="_blank">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="16" fill="#000"/>
-        <path d="M21.7 10h-2.1l-3.1 4.2L13.5 10h-2.1l3.2 5.4-3.5 4.6h2.1l3.3-4.4 3.3 4.4h2.1l-3.5-4.6 3.2-5.4z" fill="white"/>
-      </svg>
-    </a>
-    <a href="https://www.facebook.com/" class="footer__social" aria-label="Facebook" target="_blank">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#3b5998"/><path d="M21 10.5h-2.1c-.3 0-.4.2-.4.4v1.7h2.5c.2 0 .4.2.4.4v2.1c0 .2-.2.4-.4.4h-2.5v6.2c0 .2-.2.4-.4.4h-2.2c-.2 0-.4-.2-.4-.4v-6.2h-1.3c-.2 0-.4-.2-.4-.4v-2.1c0-.2.2-.4.4-.4h1.3v-1.3c0-1.6 1-2.5 2.5-2.5h2.1c.2 0 .4.2.4.4v2.1c0 .2-.2.4-.4.4z" fill="#fff"/></svg>
-    </a>
-    <a href="https://www.instagram.com/" class="footer__social" aria-label="Instagram" target="_blank">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="16" fill="#FF0000"/>
-        <rect x="9" y="9" width="14" height="14" rx="5" stroke="white" stroke-width="2.2" fill="none"/>
-        <circle cx="16" cy="16" r="4.2" stroke="white" stroke-width="2.2" fill="none"/>
-        <circle cx="21.5" cy="12.5" r="1.1" fill="white"/>
-      </svg>
-    </a>
+  <div class="footer__question-form-group">
+    <div class="footer__question-form-header">
+      <div class="footer__question-title">Якщо у Вас є питання</div>
+      <div class="footer__question-subtitle">залиште контактні дані і ми зв'яжемося з Вами</div>
     </div>
+    <form class="footer__question-form">
+      <input type="text" class="footer__question-input" placeholder="Введіть ім'я" name="name" required pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'\- ]{2,}" title="Будь ласка, введіть правильне ім’я (лише літери, щонайменше 2 символи.)">
+      <input type="tel" class="footer__question-input" placeholder="Введіть телефон" name="phone" required pattern="^[\+0-9\s\-\(\)]{10,}$" title="Будь ласка, введіть номер телефону у правильному форматі (лише цифри, знаки &quot;+&quot;, &quot;-&quot;, дужки та пробіли. Мінімальна довжина — 10 символів.)" inputmode="tel">
+      <button type="submit" class="footer__question-submit">Відправити</button>
+    </form>
   </div>
 </footer>

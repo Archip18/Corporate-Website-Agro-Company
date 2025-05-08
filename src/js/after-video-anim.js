@@ -52,4 +52,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { threshold: 0.2 });
     observerBg.observe(videoBgContent);
   }
+
+  // --- Валідація форми футера ---
+  const footerForm = document.querySelector('.footer__question-form');
+  if (footerForm) {
+    footerForm.addEventListener('submit', function(e) {
+      const nameInput = footerForm.querySelector('input[name="name"]');
+      const phoneInput = footerForm.querySelector('input[name="phone"]');
+      let valid = true;
+      if (!nameInput.value.match(/^[A-Za-zА-Яа-яІіЇїЄєҐґ'\- ]{2,}$/)) {
+        alert("Введіть коректне ім'я (тільки літери, мінімум 2 символи)");
+        valid = false;
+      }
+      if (!phoneInput.value.match(/^[\+0-9\s\-\(\)]{10,}$/) || /[A-Za-zА-Яа-яІіЇїЄєҐґ]/.test(phoneInput.value)) {
+        alert("Введіть коректний номер телефону (мінімум 10 цифр, дозволені +, -, (), пробіли)");
+        valid = false;
+      }
+      if (!valid) e.preventDefault();
+    });
+  }
 });
