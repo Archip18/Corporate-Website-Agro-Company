@@ -1,4 +1,5 @@
 import mobileNav from './modules/mobile-nav.js';
+import './modules/footer-effect.js';
 import './modules/lang-toggle.js';
 import './modules/activeMenu.js';
 import '../js/after-video-anim.js';

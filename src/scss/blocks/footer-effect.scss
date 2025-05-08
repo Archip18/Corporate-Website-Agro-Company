@@ -1,0 +1,27 @@
+.footer__question-submit {
+  &.sending {
+    background: #5a67a5;
+    color: #c3c3c3;
+    position: relative;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #fff;
+      border-top: 2px solid #5a67a5;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  }
+  &.sent {
+    background: #4caf50;
+    color: #fff;
+    transition: background 0.3s;
+  }
+}
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
