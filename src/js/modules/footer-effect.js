@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('.footer__question-form');
-  const submitBtn = form.querySelector('.footer__question-submit');
 
+const form = document.querySelector('.footer__question-form');
+
+if (form !== null) {
+  const submitBtn = form.querySelector('.footer__question-submit');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     submitBtn.disabled = true;
@@ -20,5 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
       }, 1500);
     }, 1200);
-  });
-});
+  })
+}

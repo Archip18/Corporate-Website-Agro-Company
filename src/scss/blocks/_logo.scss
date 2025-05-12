@@ -1,7 +1,7 @@
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
 }
 
 @keyframes logo-pulse {
@@ -14,20 +14,4 @@
   animation: logo-pulse 0.7s cubic-bezier(.4,0,.2,1) infinite;
   transition: filter 0.2s;
   filter: brightness(1.1) saturate(1.1);
-}
-
-.logo-img {
-    height: 40px;
-    width: auto;
-    display: block;
-    max-height: 40px;
-    background: transparent !important;
-    box-shadow: none !important;
-}
-
-@media (max-width: 600px) {
-    .logo-img {
-        height: 28px;
-        max-height: 28px;
-    }
 }

@@ -27,35 +27,25 @@
   transition: color 0.2s;
   border-radius: 16px;
   position: relative;
+  display: block;
+  width: 44px;
 }
 .lang-toggle-slider {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 42px;
+  width: 44px;
   height: 30px;
   border-radius: 16px;
   background: #4CAF50;
   transition: left 0.25s cubic-bezier(0.4,0,0.2,1);
   z-index: 1;
 }
-#lang-en:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 48px; }
-#lang-es:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 92px; }
-#lang-ua:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 2px; }
+#lang-en:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 47px; }
+#lang-es:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 91px; }
+#lang-ua:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 4px; }
 #lang-ua:checked ~ .lang-toggle-labels label[for="lang-ua"],
 #lang-en:checked ~ .lang-toggle-labels label[for="lang-en"],
 #lang-es:checked ~ .lang-toggle-labels label[for="lang-es"] {
   color: #fff;
-}
-@media (max-width: 600px) {
-  .lang-toggle-labels {
-    width: 110px;
-    height: 27px;
-    padding: 2px 2px;
-  }
-  .lang-toggle-slider { width: 32px; height: 23px; }
-  .lang-toggle-label { font-size: 15px; line-height: 21px; }
-  #lang-en:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 38px; }
-  #lang-es:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 74px; }
-  #lang-ua:checked ~ .lang-toggle-labels .lang-toggle-slider { left: 2px; }
 }
