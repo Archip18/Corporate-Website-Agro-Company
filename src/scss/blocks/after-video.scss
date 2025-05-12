@@ -1,13 +1,13 @@
 .company-section, .company-info, .animate-text-1, .animate-text-2, .animate-text-3, .animate-text-4, .animate-text-5, .animate-text-6, .animate-text-7, .animate-text-8 {
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-image-placeholder {
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 1.6s cubic-bezier(0.4,0,0.2,1), transform 1.6s cubic-bezier(0.4,0,0.2,1);
+  transition: opacity 1.6s cubic-bezier(0.4, 0, 0.2, 1), transform 1.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -18,14 +18,53 @@
   transform: none;
 }
 
-.animate-text-1.in-view { opacity: 1; transform: none; transition-delay: 0.1s; }
-.animate-text-2.in-view { opacity: 1; transform: none; transition-delay: 0.2s; }
-.animate-text-3.in-view { opacity: 1; transform: none; transition-delay: 0.3s; }
-.animate-text-4.in-view { opacity: 1; transform: none; transition-delay: 0.4s; }
-.animate-text-5.in-view { opacity: 1; transform: none; transition-delay: 0.5s; }
-.animate-text-6.in-view { opacity: 1; transform: none; transition-delay: 0.6s; }
-.animate-text-7.in-view { opacity: 1; transform: none; transition-delay: 0.7s; }
-.animate-text-8.in-view { opacity: 1; transform: none; transition-delay: 0.8s; }
+.animate-text-1.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.1s;
+}
+
+.animate-text-2.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.2s;
+}
+
+.animate-text-3.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+.animate-text-4.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.4s;
+}
+
+.animate-text-5.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.5s;
+}
+
+.animate-text-6.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.6s;
+}
+
+.animate-text-7.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.7s;
+}
+
+.animate-text-8.in-view {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.8s;
+}
 
 .company-info {
   margin-left: auto;
@@ -45,7 +84,7 @@
   margin-top: 16px;
   font-size: 18px;
   letter-spacing: 1px;
-  box-shadow: 0 2px 8px rgba(211,47,47,0.08);
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.08);
   transition: background .2s, color .2s, transform .18s, box-shadow .18s, filter .18s, outline .18s;
   text-align: center;
   cursor: pointer;
@@ -54,33 +93,30 @@
     background: #b71c1c;
     color: #fff;
     transform: translateY(-3px) scale(1.06);
-    box-shadow: 0 10px 24px 0 rgba(183,28,28,0.22), 0 0 10px 2px #fff3;
+    box-shadow: 0 10px 24px 0 rgba(183, 28, 28, 0.22), 0 0 10px 2px #fff3;
     outline: 2px solid #fff3;
     outline-offset: 2px;
     filter: brightness(1.08) drop-shadow(0 0 8px #fff3);
   }
+
   &:active {
     transform: translateY(1px) scale(0.98);
-    box-shadow: 0 2px 8px rgba(183,28,28,0.15);
+    box-shadow: 0 2px 8px rgba(183, 28, 28, 0.15);
     filter: none;
   }
 }
 
 .button-detail {
   opacity: 0;
-  transform: translateY(30px);
+
   pointer-events: none;
-  transition:
-    opacity 1.2s cubic-bezier(0.4,0,0.2,1),
-    transform 1.2s cubic-bezier(0.4,0,0.2,1),
-    background 0.3s cubic-bezier(0.4,0,0.2,1),
-    box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
 
   &.button-detail--visible {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
+
   background-color: #e53935;
   color: #fff;
   border: none;
@@ -90,20 +126,141 @@
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  transition: 
-    background 0.3s cubic-bezier(0.4,0,0.2,1),
-    transform 0.2s cubic-bezier(0.4,0,0.2,1),
-    box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+  transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover, &:focus {
     background: #b71c1c;
     transform: translateY(-3px) scale(1.04);
-    box-shadow: 0 8px 24px rgba(229,57,53,0.18);
+    box-shadow: 0 8px 24px rgba(229, 57, 53, 0.18);
     outline: none;
   }
 
   &:active {
     transform: scale(0.98);
-    box-shadow: 0 2px 8px rgba(229,57,53,0.12);
+    box-shadow: 0 2px 8px rgba(229, 57, 53, 0.12);
+  }
+}
+
+.after-video-block {
+  padding: 32px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin: 0;
+}
+
+.company-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 0;
+}
+
+.company-image-placeholder {
+  order: 2;
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.company-image-placeholder picture {
+  height: 100%;
+}
+
+.company-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.company-info {
+  order: 1;
+  max-width: 650px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 40px 48px 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 0;
+}
+
+.company-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  min-height: 0;
+}
+
+.company-info-wrapper p {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.company-info-wrapper h3 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.company-info-wrapper h3 + p {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  font-style: italic;
+}
+
+.company-info-wrapper h4 {
+  color: #111;
+  border-left: 4px solid #111;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 6px;
+ }
+
+@media (min-width: 992px) {
+  .after-video-block {
+    padding-inline: 40px;
+  }
+
+  .company-section {
+    flex-direction: row;
+  }
+
+  .company-image-placeholder {
+    order: 1;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .company-info {
+    order: 2;
+    flex-grow: 1;
+    width: 100%;
   }
 }
