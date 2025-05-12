@@ -5,24 +5,26 @@
                 <img src="../img/logo/logo.png" alt="CROPIA Logo" class="logo-img">
             </a>
         </div>
-        <nav class="nav-menu">
-            <a href="./index.html" class="header__menu-link" data-i18n="home">Головна</a>
-            <a href="./about.html" class="header__menu-link" data-i18n="about">Про компанію</a>
-            <a href="./services.html" class="header__menu-link" data-i18n="services">Послуги</a>
-            <a href="./news.html" class="header__menu-link" data-i18n="news">Новини</a>
-            <a href="./location.html" class="header__menu-link" data-i18n="location_nav">Розташування</a>
-        </nav>
-        <div class="lang-toggle">
-            <input type="radio" name="lang" id="lang-ua" value="ua" checked hidden>
-            <input type="radio" name="lang" id="lang-en" value="en" hidden>
-            <input type="radio" name="lang" id="lang-es" value="es" hidden>
-            <div class="lang-toggle-labels">
-                <label for="lang-ua" class="lang-toggle-label" data-lang="ua" data-i18n-lang="ua">UA</label>
-                <label for="lang-en" class="lang-toggle-label" data-lang="en" data-i18n-lang="en">EN</label>
-                <label for="lang-es" class="lang-toggle-label" data-lang="es" data-i18n-lang="es">ES</label>
-                <div class="lang-toggle-slider"></div>
+        <div class="nav-wrapper">
+            <nav class="nav-menu">
+                <a href="./index.html" class="header__menu-link" data-i18n="home">Головна</a>
+                <a href="./about.html" class="header__menu-link" data-i18n="about">Про компанію</a>
+                <a href="./services.html" class="header__menu-link" data-i18n="services">Послуги</a>
+                <a href="./news.html" class="header__menu-link" data-i18n="news">Новини</a>
+                <a href="./location.html" class="header__menu-link" data-i18n="location_nav">Розташування</a>
+            </nav>
+            <div class="lang-toggle">
+                <input type="radio" name="lang" id="lang-ua" value="ua" checked hidden>
+                <input type="radio" name="lang" id="lang-en" value="en" hidden>
+                <input type="radio" name="lang" id="lang-es" value="es" hidden>
+                <div class="lang-toggle-labels">
+                    <label for="lang-ua" class="lang-toggle-label" data-lang="ua" data-i18n-lang="ua">UA</label>
+                    <label for="lang-en" class="lang-toggle-label" data-lang="en" data-i18n-lang="en">EN</label>
+                    <label for="lang-es" class="lang-toggle-label" data-lang="es" data-i18n-lang="es">ES</label>
+                    <div class="lang-toggle-slider"></div>
+                </div>
             </div>
         </div>
+        <svg class="mobile-menu-burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
     </div>
 </header>
-@@include('mobile-nav.html')

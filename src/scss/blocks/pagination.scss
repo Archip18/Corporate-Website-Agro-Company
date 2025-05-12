@@ -41,10 +41,11 @@
   margin: 32px 0;
   ul {
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
     list-style: none;
+    width: 100%;
   }
   .pagination__item {
     a {
@@ -71,5 +72,13 @@
       border-color: #182153;
       color: #182153;
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .pagination--round ul {
+    justify-content: center;
+    gap: 24px;
+    width: auto;
   }
 }
