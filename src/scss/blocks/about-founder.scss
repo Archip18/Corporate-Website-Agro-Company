@@ -16,7 +16,6 @@
 
 
 picture:has(.about-founder__photo)  {
-
   width: 320px;
   height: 320px;
   display: block;
@@ -129,6 +128,10 @@ picture:has(.about-founder__photo)  {
     width: 100%;
     flex-grow: 1;
     height: auto;
+  }
+
+  .about-founder__photo {
+    height: 100%;
   }
 
   .about-founder__content {
