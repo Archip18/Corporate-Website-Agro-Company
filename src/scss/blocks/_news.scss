@@ -22,9 +22,11 @@
   min-height: 100vh;
   padding: 0;
   margin-top: 32px;
+  border-radius: 8px;
 }
 
 .news-title {
+  margin-top: 30px;
   text-align: center;
   font-size: 2.8rem;
   font-weight: 800;
@@ -51,6 +53,7 @@
 }
 
 .news-grid {
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
