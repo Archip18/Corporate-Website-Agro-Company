@@ -1,10 +1,7 @@
 .footer {
-  width: 100vw;
+
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+
   box-sizing: border-box;
   background-color: rgb(22, 28, 6);
   min-height: 120px;
@@ -15,6 +12,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  overflow: hidden;
 
   a {
     color: inherit;

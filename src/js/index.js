@@ -6,10 +6,12 @@ import '../js/after-video-anim.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   let animatedEls = document.querySelectorAll('[class*="animate-"]');
+
   const footer = document.querySelector('.animate-footer');
   if (footer && ![...animatedEls].includes(footer)) {
     animatedEls = [...animatedEls, footer];
   }
+
   const onScroll = () => {
     animatedEls.forEach(el => {
       const rect = el.getBoundingClientRect();
