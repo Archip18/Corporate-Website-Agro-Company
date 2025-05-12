@@ -120,7 +120,6 @@
 
 .service-block {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   gap: 60px;
   margin: 5px auto 110px auto;
@@ -129,18 +128,21 @@
 }
 
 .service-img {
-  margin-top: -14px;
-  flex: 0 0 540px;
-  max-width: 540px;
-  min-width: 320px;
-  aspect-ratio: 3/2;
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  width: 100%;
 }
+
+.service-img picture {
+  height: 100%;
+  width: 100%;
+}
+
 .service-img img {
   width: 100%;
   height: 100%;
@@ -149,9 +151,9 @@
   border-radius: 16px;
 }
 .service-content {
-  flex: 1 1 0;
-  min-width: 220px;
-  max-width: 520px;
+
+  flex-grow: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -160,18 +162,21 @@
   padding: 0 18px;
   text-align: left;
 }
-.service-block--reverse .service-text {
-  text-align: right;
-}
 
 .service-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 14px;
   color: #111;
-  text-align: center;
+  text-align: left;
   width: 100%;
-} 
+}
+
+.service-block--reverse .service-title {
+  text-align: right;
+}
+
+
 .service-text {
   font-size: 1.3rem;
   line-height: 1.6;
@@ -206,6 +211,16 @@
     padding: 0 10px;
     margin: 10px auto 60px auto;
   }
+
+  .service-block--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .service-block .service-title,
+  .service-block--reverse .service-title {
+    text-align: center;
+  }
+  
   .service-img {
     max-width: 100%;
     width: 100%;
