@@ -3,6 +3,7 @@ import './modules/footer-effect.js';
 import './modules/lang-toggle.js';
 import './modules/activeMenu.js';
 import '../js/after-video-anim.js';
+import '../js/testimonials-scroll.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   let animatedEls = document.querySelectorAll('[class*="animate-"]');

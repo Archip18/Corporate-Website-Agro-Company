@@ -1,6 +1,18 @@
 .testimonials {
     padding: 50px 0 40px;
     background-color: #f9f9f9;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    
+    &.animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    &:not(.animated) {
+        opacity: 0;
+        transform: translateY(30px);
+    }
 
     &__title {
         font-size: 32px;
@@ -55,11 +67,23 @@
         min-width: 300px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: left;
-        transition: all 0.3s ease;
+        text-align: center;
         position: relative;
         overflow: hidden;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1.2s ease, transform 1.2s ease, box-shadow 0.4s ease;
+        
+        &.item-animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @for $i from 1 through 7 {
+            &:nth-child(#{$i}).item-animated {
+                transition-delay: #{$i * 0.3}s;
+            }
+        }
         
         &:before {
             content: '\201C';
@@ -76,15 +100,36 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
     }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    &__content-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        width: 100%;
+    }
 
     &__photo {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         overflow: hidden;
-        margin-bottom: 20px;
         border: 3px solid #4CAF50;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+        flex-shrink: 0;
 
         img {
             width: 100%;
@@ -92,20 +137,23 @@
             object-fit: cover;
         }
     }
+    
+    &__info {
+        flex-grow: 1;
+    }
 
     &__name {
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 5px;
         color: #333;
-        text-align: center;
+        text-align: left;
     }
 
     &__position {
         font-size: 16px;
         color: #666;
-        margin-bottom: 25px;
-        text-align: center;
+        text-align: left;
         font-style: italic;
     }
 
@@ -167,6 +215,17 @@
 
         &__item {
             flex-basis: 100%;
+            padding: 25px;
+        }
+        
+        &__photo {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 12px;
+        }
+        
+        &__name {
+            font-size: 20px;
         }
     }
 
@@ -176,22 +235,55 @@
         &__title {
             font-size: 24px;
         }
+        
+        &__item {
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.2s ease, transform 1.2s ease, box-shadow 0.4s ease;
+            
+            &.item-animated {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            @for $i from 1 through 7 {
+                &:nth-child(#{$i}).item-animated {
+                    transition-delay: #{$i * 0.3}s;
+                }
+            }
+        }
+        
+        &__content-wrap {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &__photo {
-            width: 80px;
-            height: 80px;
+            width: 90px;
+            height: 90px;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        
+        &__info {
+            width: 100%;
+            text-align: center;
         }
 
         &__name {
             font-size: 18px;
+            text-align: center;
         }
 
         &__position {
             font-size: 14px;
+            text-align: center;
         }
 
         &__text {
             font-size: 14px;
+            text-align: center;
         }
     }
 }
