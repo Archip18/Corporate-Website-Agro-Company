@@ -4,14 +4,56 @@
   font-size: 32px;
 }
 
+/* Анімація пульсації */
 @keyframes logo-pulse {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(172,24,44,0.4); }
-  50% { transform: scale(1.08); box-shadow: 0 0 12px 4px rgba(172,24,44,0.22); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(172,24,44,0.4); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
 
-.logo a:hover .logo-img, .logo a:focus .logo-img {
+/* Анімація появи при завантаженні сторінки */
+@keyframes logo-entrance {
+  0% { 
+    opacity: 0; 
+    transform: translateY(-20px) scale(0.8); 
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px) scale(1.05);
+  }
+  75% {
+    transform: translateY(-3px) scale(0.98);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+/* Анімація обертання при наведенні */
+@keyframes logo-rotate {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Базова стилізація логотипу */
+.logo-img {
+  transition: all 0.3s ease;
+  will-change: transform;
+  transform-origin: center;
+  animation: logo-entrance 1.2s ease-out forwards;
+}
+
+/* Ефекти при наведенні */
+.logo a:hover .logo-img {
   animation: logo-pulse 0.7s cubic-bezier(.4,0,.2,1) infinite;
-  transition: filter 0.2s;
+  filter: brightness(1.1) saturate(1.1);
+}
+
+/* Ефекти при фокусі */
+.logo a:focus .logo-img {
+  animation: logo-pulse 0.7s cubic-bezier(.4,0,.2,1);
   filter: brightness(1.1) saturate(1.1);
 }
