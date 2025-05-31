@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Забезпечення якісною продукцією',
             'card3-desc': 'Ми постачаємо насіння та добрива найвищої якості.',
             // Новини
+            'news-page-title': 'Новини',
             'news-header': 'Новини',
             'news1-title': 'ЕКСПОРТ УКРАЇНСЬКОЇ ПРОДУКЦІЇ ЗА КОРДОН',
             'news1-date': '10 травня 2025',
@@ -103,7 +104,53 @@ document.addEventListener('DOMContentLoaded', function() {
             'about-team-title': 'Наша команда',
             'about-team-1': "Справжня сила нашої компанії — це команда. Ми не просто співробітники, ми — спільнота, об'єднана спільною метою: ефективно розвивати аграрний сектор України, поєднуючи досвід, інновації та щоденну самовіддачу.",
             'about-team-2': "У нашій роботі ми покладаємося на взаєморозуміння, довіру та відповідальність. Кожен працівник, незалежно від посади, робить свій внесок у загальний результат — і ми цінуємо це. Тут немає 'другорядних' завдань: кожен процес, від підготовки ґрунту до доставки готової продукції клієнту, — частина єдиної системи, яка працює злагоджено й ефективно.",
-            'about-team-3': "Ми створюємо середовище, у якому підтримується розвиток і постійне вдосконалення. Молоді спеціалісти отримують наставництво від досвідчених колег, а досвідчені — нові ідеї та енергію молоді. Це партнерство поколінь формує нашу гнучкість, професіоналізм і відкритість до змін."
+            'about-team-3': "Ми створюємо середовище, у якому підтримується розвиток і постійне вдосконалення. Молоді спеціалісти отримують наставництво від досвідчених колег, а досвідчені — нові ідеї та енергію молоді. Це партнерство поколінь формує нашу гнучкість, професіоналізм і відкритість до змін.",
+            
+            // Testimonials section
+            'testimonials__title': 'ЩО ПРО НАС ГОВОРЯТЬ',
+            'testimonials__subtitle': 'Відгуки наших клієнтів про співпрацю з нашою компанією',
+            
+            // Testimonial 1
+            'testimonial-name-1': 'Ігор Коваленко',
+            'testimonial-position-1': 'Фермер, ТОВ "АгроЕко"',
+            'testimonial-text-1-1': '"Співпраця з компанією CROPIA виявилася надзвичайно продуктивною. Їхні інноваційні рішення дозволили нам збільшити врожайність на 30% вже в перший рік. Завдяки комплексному підходу до нашої земельної ділянки, ми змогли оптимізувати використання ресурсів та покращити якість ґрунту.',
+            'testimonial-text-1-2': 'Особливо цінуємо їхні професійні консультації та технічну підтримку, яка доступна 24/7. Спеціалісти CROPIA регулярно відвідують наші поля та надають рекомендації щодо покращення агротехнічних заходів. Це надійний партнер, з яким ми плануємо співпрацювати і надалі. За два роки співпраці наше господарство значно покращило свої фінансові показники."',
+            
+            // Testimonial 2
+            'testimonial-name-2': 'Віталій Довгополий',
+            'testimonial-position-2': 'Директор, "Зернові Технології"',
+            'testimonial-text-2-1': '"Я вражений якістю логістичних послуг CROPIA. Завдяки їхнім сертифікованим складам та надійній системі транспортування, ми змогли оптимізувати доставку продукції та зменшити витрати майже вдвічі. Впроваджена ними система відстеження вантажів в реальному часі дозволяє нам завжди знати, де знаходиться наша продукція, що значно покращило планування поставок.',
+            'testimonial-text-2-2': 'Особливо хочу відзначити професіоналізм команди логістів. За три роки співпраці не було жодного випадку затримки, навіть в періоди пікових навантажень та сезонних робіт. Завдяки цьому наша компанія змогла укласти контракти з європейськими партнерами, які вимагають високої точності поставок. Рекомендую цю компанію всім партнерам, які шукають надійні логістичні рішення!"',
+            
+            // Testimonial 3
+            'testimonial-name-3': 'Максим Березовський',
+            'testimonial-position-3': 'Агроном, ФГ "Колос"',
+            'testimonial-text-3-1': '"Технологічні карти та агрономічний аналіз ґрунтів від CROPIA допомогли нам впровадити точне землеробство на наших полях. Результат – раціональне використання ресурсів та зниження витрат на засоби захисту рослин на 20%. Завдяки диференційованому внесенню добрив ми змогли забезпечити оптимальний розвиток рослин на всій площі наших полів.',
+            'testimonial-text-3-2': 'Особливо корисними виявились GPS-карти полів та система моніторингу посівів, які дозволили нам вчасно виявляти проблемні зони та оперативно реагувати на зміни стану посівів. Також ми використовуємо прогнозні моделі CROPIA для планування посівних робіт та збору врожаю. Наша співпраця з CROPIA – це не просто послуги, а справжня інвестиція в майбутнє нашого господарства."',
+            
+            // Testimonial 4
+            'testimonial-name-4': 'Олена Петренко',
+            'testimonial-position-4': 'Власниця, ФГ "Агро-Успіх"',
+            'testimonial-text-4-1': '"Завдяки якісному насіннєвому матеріалу від CROPIA наше господарство досягло рекордних показників врожайності пшениці та соняшнику. Ми використовували їхні гібриди, адаптовані до наших кліматичних умов, і результат перевершив наші очікування. Врожайність зросла на 35% порівняно з попереднім роком, а якість продукції дозволила нам укласти контракти з преміум-покупцями.',
+            'testimonial-text-4-2': 'Ціную прозорість у відносинах та завжди високу якість продукції. Кожна партія насіння проходить ретельний контроль якості, а спеціалісти компанії готові надати консультацію щодо його використання для максимального ефекту. CROPIA стали для нас не просто постачальником, а надійним партнером у розвитку нашого бізнесу, який допомагає нам зростати та розвиватися з кожним роком."',
+            
+            // Testimonial 5
+            'testimonial-name-5': 'Андрій Мельник',
+            'testimonial-position-5': 'Головний агроном, ПП "Західний Лан"',
+            'testimonial-text-5-1': '"Як спеціаліст з багаторічним досвідом, я ретельно обираю постачальників. CROPIA вразила мене інноваційними підходами до захисту рослин та підвищення родючості ґрунтів. Ми впровадили їхню систему біологічного захисту рослин, що не лише знизило використання хімічних препаратів на 40%, але й значно покращило стан ґрунтів.',
+            'testimonial-text-5-2': 'Їхні агрономи регулярно консультують нас щодо оптимальних рішень для наших полів та кліматичних умов. За останні два сезони ми отримали понад 50 консультацій, які допомогли нам вчасно виявити та усунути проблеми з хворобами та шкідниками. Доступність їхніх експертів 24/7 через мобільний додаток дозволяє нам оперативно реагувати на виклики. Це дійсно партнерство, орієнтоване на довгостроковий результат та сталий розвиток."',
+            
+            // Testimonial 6
+            'testimonial-name-6': 'Сергій Данилюк',
+            'testimonial-position-6': 'Директор, ТОВ "АгроІнвест"',
+            'testimonial-text-6-1': '"Комплексні рішення від CROPIA для зберігання та транспортування сільгосппродукції дозволили нам вийти на нові міжнародні ринки. Їхня система контролю якості продукції та сертифікації відповідає найвищим міжнародним стандартам, що дозволило нам укласти контракти з партнерами з Німеччини, Франції та Нідерландів.',
+            'testimonial-text-6-2': 'Особливо важливим є те, що компанія забезпечує супровід на всіх етапах - від поля до порту. Температурний моніторинг у реальному часі та автоматизовані системи вентиляції на складах дозволяють зберігати продукцію без втрати якості протягом тривалого часу. Завдяки цьому ми можемо обирати найвигідніший час для продажу, що підвищує нашу конкурентоспроможність. Наш прибуток зріс на 25% за останній рік співпраці, а кількість експортних контрактів збільшилась утричі."',
+            
+            // Testimonial 7
+            'testimonial-name-7': 'Марина Ковальчук',
+            'testimonial-position-7': 'Керівник відділу закупівель, ТОВ "Органік Трейд"',
+            'testimonial-text-7-1': '"Наша компанія спеціалізується на органічній продукції, і CROPIA ідеально відповідає нашим вимогам щодо екологічності та якості. Протягом трьох років співпраці ми змогли збільшити площі органічних земель з 450 до 1200 гектарів, зберігаючи при цьому високі показники врожайності. Дуже важливо, що вся продукція проходить сертифікацію за стандартами ЄС та Швейцарії.',
+            'testimonial-text-7-2': 'Ми особливо цінуємо їхній науковий підхід до біологічного захисту рослин та органічних добрив. Лабораторія CROPIA постійно розробляє нові формули мікробіологічних препаратів, адаптованих до наших грунтів та культур. Завдяки цьому наші поля мають балансовану мікрофлору, що підвищує стійкість рослин до хвороб та шкідників. Це дозволяє нам виробляти продукцію найвищої якості для вибагливих європейських ринків, що відкрило нам доступ до преміальних сегментів ринку з надбавкою до 40% до стандартної ціни."'
 
         },
         en: {
@@ -142,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Supplying quality products',
             'card3-desc': 'We supply seeds and fertilizers of the highest quality.',
             // News
+            'news-page-title': 'News',
             'news-header': 'News',
             // News promo
             'news1-title': 'EXPORT OF UKRAINIAN PRODUCTS ABROAD',
@@ -149,6 +197,52 @@ document.addEventListener('DOMContentLoaded', function() {
             'news1-desc': 'Ukrainian farmers are actively developing exports, supplying grain, oil, and other products to world markets. Thanks to modern logistics and high product quality, the country strengthens its position among the leading exporters of agricultural products...',
             'news1-link': 'Read more',
             'news2-title': 'FEATURES OF PHOSPHORUS FERTILIZER APPLICATION',
+            
+            // Testimonials section
+            'testimonials__title': 'WHAT PEOPLE SAY ABOUT US',
+            'testimonials__subtitle': 'Testimonials from our clients about cooperation with our company',
+            
+            // Testimonial 1
+            'testimonial-name-1': 'Igor Kovalenko',
+            'testimonial-position-1': 'Farmer, AgroEco LLC',
+            'testimonial-text-1-1': '"Cooperation with CROPIA has been extremely productive. Their innovative solutions allowed us to increase yields by 30% in the first year. Thanks to a comprehensive approach to our land, we were able to optimize resource use and improve soil quality.',
+            'testimonial-text-1-2': 'We especially value their professional consultations and technical support, which is available 24/7. CROPIA specialists regularly visit our fields and provide recommendations for improving agricultural practices. This is a reliable partner with whom we plan to cooperate in the future. In two years of cooperation, our farm has significantly improved its financial performance."',
+            
+            // Testimonial 2
+            'testimonial-name-2': 'Vitaliy Dovgopoliy',
+            'testimonial-position-2': 'Director, "Grain Technologies"',
+            'testimonial-text-2-1': '"I am impressed with the quality of CROPIA\'s logistics services. Thanks to their certified warehouses and reliable transportation system, we were able to optimize product delivery and reduce costs by almost half. Their real-time cargo tracking system allows us to always know where our products are, which has significantly improved supply planning.',
+            'testimonial-text-2-2': 'I especially want to note the professionalism of the logistics team. In three years of cooperation, there has not been a single case of delay, even during peak periods and seasonal work. Thanks to this, our company was able to conclude contracts with European partners who require high accuracy of deliveries. I recommend this company to all partners looking for reliable logistics solutions!"',
+            
+            // Testimonial 3
+            'testimonial-name-3': 'Maxim Berezovsky',
+            'testimonial-position-3': 'Agronomist, Kolos Farm',
+            'testimonial-text-3-1': '"Technological maps and agronomic soil analysis from CROPIA helped us implement precision farming in our fields. The result is rational use of resources and a 20% reduction in plant protection costs. Thanks to differentiated fertilizer application, we were able to ensure optimal plant development throughout our fields.',
+            'testimonial-text-3-2': 'GPS field maps and crop monitoring systems were particularly useful, allowing us to identify problem areas in a timely manner and respond quickly to changes in crop conditions. We also use CROPIA\'s predictive models for planning sowing operations and harvesting. Our cooperation with CROPIA is not just a service, but a real investment in the future of our farm."',
+            
+            // Testimonial 4
+            'testimonial-name-4': 'Olena Petrenko',
+            'testimonial-position-4': 'Owner, Agro-Success Farm',
+            'testimonial-text-4-1': '"Thanks to high-quality seed material from CROPIA, our farm has achieved record yields of wheat and sunflower. We used their hybrids adapted to our climatic conditions, and the result exceeded our expectations. Yields increased by 35% compared to the previous year, and the quality of products allowed us to conclude contracts with premium buyers.',
+            'testimonial-text-4-2': 'I appreciate transparency in relationships and consistently high product quality. Each batch of seeds undergoes thorough quality control, and company specialists are ready to provide advice on its use for maximum effect. CROPIA has become not just a supplier for us, but a reliable partner in the development of our business, helping us grow and develop every year."',
+            
+            // Testimonial 5
+            'testimonial-name-5': 'Andriy Melnyk',
+            'testimonial-position-5': 'Chief Agronomist, Western Field PE',
+            'testimonial-text-5-1': '"As a specialist with many years of experience, I carefully choose suppliers. CROPIA impressed me with innovative approaches to plant protection and soil fertility improvement. We implemented their biological plant protection system, which not only reduced the use of chemicals by 40%, but also significantly improved soil conditions.',
+            'testimonial-text-5-2': 'Their agronomists regularly consult us on optimal solutions for our fields and climatic conditions. Over the past two seasons, we have received over 50 consultations that have helped us identify and address problems with diseases and pests in a timely manner. The availability of their experts 24/7 through a mobile app allows us to respond quickly to challenges. This is truly a partnership focused on long-term results and sustainable development."',
+            
+            // Testimonial 6
+            'testimonial-name-6': 'Sergiy Danyliuk',
+            'testimonial-position-6': 'Director, AgroInvest LLC',
+            'testimonial-text-6-1': '"Comprehensive solutions from CROPIA for storage and transportation of agricultural products allowed us to enter new international markets. Their product quality control and certification system meets the highest international standards, which allowed us to conclude contracts with partners from Germany, France and the Netherlands.',
+            'testimonial-text-6-2': 'It is especially important that the company provides support at all stages - from field to port. Real-time temperature monitoring and automated ventilation systems in warehouses allow products to be stored without loss of quality for a long time. Thanks to this, we can choose the most profitable time for sale, which increases our competitiveness. Our profit increased by 25% over the last year of cooperation, and the number of export contracts tripled."',
+            
+            // Testimonial 7
+            'testimonial-name-7': 'Marina Kovalchuk',
+            'testimonial-position-7': 'Head of Procurement, Organic Trade LLC',
+            'testimonial-text-7-1': '"Our company specializes in organic products, and CROPIA perfectly meets our requirements for environmental friendliness and quality. During three years of cooperation, we were able to increase the area of organic land from 450 to 1200 hectares, while maintaining high yields. It is very important that all products are certified according to EU and Swiss standards.',
+            'testimonial-text-7-2': 'We especially appreciate their scientific approach to biological plant protection and organic fertilizers. CROPIA laboratory constantly develops new formulas of microbiological preparations adapted to our soils and crops. Thanks to this, our fields have a balanced microflora, which increases the resistance of plants to diseases and pests. This allows us to produce the highest quality products for demanding European markets, which has given us access to premium market segments with a premium of up to 40% to the standard price."',
             'news2-date': 'May 5, 2025',
             'news2-desc': 'Phosphorus fertilizers play a key role in root system formation and yield increase. For best results, it is important to consider soil type, timing, and application methods. Optimal phosphorus use promotes plant development and ensures stable yields even in challenging weather conditions...',
             'news2-link': 'Read more',
@@ -254,6 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'card3-title': 'Suministro de productos de calidad',
             'card3-desc': 'Suministramos semillas y fertilizantes de la más alta calidad.',
             // Noticias
+            'news-page-title': 'Noticias',
             'news-header': 'Noticias',
             // News promo
             'news1-title': 'EXPORTACIÓN DE PRODUCTOS UCRANIANOS AL EXTRANJERO',
@@ -265,6 +360,52 @@ document.addEventListener('DOMContentLoaded', function() {
             'news2-desc': 'Los fertilizantes fosforados desempeñan un papel clave en la formación del sistema radicular y el aumento del rendimiento. Para obtener los mejores resultados, es importante considerar el tipo de suelo, los plazos y los métodos de aplicación. El uso óptimo del fósforo promueve el desarrollo de las plantas y garantiza cosechas estables incluso en condiciones climáticas difíciles...',
             'news2-link': 'Leer más',
             'news3-title': 'BENEFICIOS ADICIONALES PARA AGRICULTORES DURANTE LA GUERRA',
+            
+            // Testimonials section
+            'testimonials__title': 'LO QUE DICEN DE NOSOTROS',
+            'testimonials__subtitle': 'Testimonios de nuestros clientes sobre la cooperación con nuestra empresa',
+            
+            // Testimonial 1
+            'testimonial-name-1': 'Igor Kovalenko',
+            'testimonial-position-1': 'Agricultor, AgroEco LLC',
+            'testimonial-text-1-1': '"La cooperación con CROPIA ha sido extremadamente productiva. Sus soluciones innovadoras nos permitieron aumentar los rendimientos en un 30% en el primer año. Gracias a un enfoque integral de nuestra tierra, pudimos optimizar el uso de recursos y mejorar la calidad del suelo.',
+            'testimonial-text-1-2': 'Valoramos especialmente sus consultas profesionales y soporte técnico, disponible 24/7. Los especialistas de CROPIA visitan regularmente nuestros campos y proporcionan recomendaciones para mejorar las prácticas agrícolas. Este es un socio confiable con quien planeamos cooperar en el futuro. En dos años de cooperación, nuestra granja ha mejorado significativamente su desempeño financiero."',
+            
+            // Testimonial 2
+            'testimonial-name-2': 'Vitaliy Dovgopoliy',
+            'testimonial-position-2': 'Director, "Tecnologías de Grano"',
+            'testimonial-text-2-1': '"Estoy impresionado con la calidad de los servicios logísticos de CROPIA. Gracias a sus almacenes certificados y sistema de transporte confiable, pudimos optimizar la entrega de productos y reducir costos casi a la mitad. Su sistema de seguimiento de carga en tiempo real nos permite saber siempre dónde están nuestros productos, lo que ha mejorado significativamente la planificación de suministros.',
+            'testimonial-text-2-2': 'Quiero destacar especialmente el profesionalismo del equipo de logística. En tres años de cooperación, no ha habido un solo caso de retraso, incluso durante períodos pico y trabajo estacional. Gracias a esto, nuestra empresa pudo concluir contratos con socios europeos que requieren alta precisión en las entregas. ¡Recomiendo esta empresa a todos los socios que buscan soluciones logísticas confiables!"',
+            
+            // Testimonial 3
+            'testimonial-name-3': 'Maxim Berezovsky',
+            'testimonial-position-3': 'Agrónomo, Granja Kolos',
+            'testimonial-text-3-1': '"Los mapas tecnológicos y el análisis agronómico del suelo de CROPIA nos ayudaron a implementar la agricultura de precisión en nuestros campos. El resultado es un uso racional de los recursos y una reducción del 20% en los costos de protección de plantas. Gracias a la aplicación diferenciada de fertilizantes, pudimos asegurar un desarrollo óptimo de las plantas en todos nuestros campos.',
+            'testimonial-text-3-2': 'Los mapas GPS de campo y los sistemas de monitoreo de cultivos fueron particularmente útiles, permitiéndonos identificar áreas problemáticas de manera oportuna y responder rápidamente a los cambios en las condiciones de los cultivos. También utilizamos los modelos predictivos de CROPIA para planificar operaciones de siembra y cosecha. Nuestra cooperación con CROPIA no es solo un servicio, sino una inversión real en el futuro de nuestra granja."',
+            
+            // Testimonial 4
+            'testimonial-name-4': 'Olena Petrenko',
+            'testimonial-position-4': 'Propietaria, Granja Agro-Success',
+            'testimonial-text-4-1': '"Gracias al material de semillas de alta calidad de CROPIA, nuestra granja ha logrado rendimientos récord de trigo y girasol. Utilizamos sus híbridos adaptados a nuestras condiciones climáticas, y el resultado superó nuestras expectativas. Los rendimientos aumentaron un 35% en comparación con el año anterior, y la calidad de los productos nos permitió concluir contratos con compradores premium.',
+            'testimonial-text-4-2': 'Aprecio la transparencia en las relaciones y la calidad consistentemente alta del producto. Cada lote de semillas se somete a un control de calidad exhaustivo, y los especialistas de la empresa están listos para brindar asesoramiento sobre su uso para obtener el máximo efecto. CROPIA se ha convertido no solo en un proveedor para nosotros, sino en un socio confiable en el desarrollo de nuestro negocio, ayudándonos a crecer y desarrollarnos cada año."',
+            
+            // Testimonial 5
+            'testimonial-name-5': 'Andriy Melnyk',
+            'testimonial-position-5': 'Agrónomo Jefe, Western Field PE',
+            'testimonial-text-5-1': '"Como especialista con muchos años de experiencia, elijo cuidadosamente a los proveedores. CROPIA me impresionó con enfoques innovadores para la protección de plantas y la mejora de la fertilidad del suelo. Implementamos su sistema de protección biológica de plantas, que no solo redujo el uso de productos químicos en un 40%, sino que también mejoró significativamente las condiciones del suelo.',
+            'testimonial-text-5-2': 'Sus agrónomos nos consultan regularmente sobre soluciones óptimas para nuestros campos y condiciones climáticas. Durante las últimas dos temporadas, hemos recibido más de 50 consultas que nos han ayudado a identificar y abordar problemas con enfermedades y plagas de manera oportuna. La disponibilidad de sus expertos 24/7 a través de una aplicación móvil nos permite responder rápidamente a los desafíos. Esta es verdaderamente una asociación centrada en resultados a largo plazo y desarrollo sostenible."',
+            
+            // Testimonial 6
+            'testimonial-name-6': 'Sergiy Danyliuk',
+            'testimonial-position-6': 'Director, AgroInvest LLC',
+            'testimonial-text-6-1': '"Las soluciones integrales de CROPIA para el almacenamiento y transporte de productos agrícolas nos permitieron ingresar a nuevos mercados internacionales. Su sistema de control de calidad y certificación de productos cumple con los más altos estándares internacionales, lo que nos permitió celebrar contratos con socios de Alemania, Francia y los Países Bajos.',
+            'testimonial-text-6-2': 'Es especialmente importante que la empresa brinde soporte en todas las etapas, desde el campo hasta el puerto. El monitoreo de temperatura en tiempo real y los sistemas de ventilación automatizados en los almacenes permiten almacenar productos sin pérdida de calidad durante mucho tiempo. Gracias a esto, podemos elegir el momento más rentable para la venta, lo que aumenta nuestra competitividad. Nuestra ganancia aumentó un 25% durante el último año de cooperación, y el número de contratos de exportación se triplicó."',
+            
+            // Testimonial 7
+            'testimonial-name-7': 'Marina Kovalchuk',
+            'testimonial-position-7': 'Jefa de Compras, Organic Trade LLC',
+            'testimonial-text-7-1': '"Nuestra empresa se especializa en productos orgánicos, y CROPIA cumple perfectamente con nuestros requisitos de respeto al medio ambiente y calidad. Durante tres años de cooperación, pudimos aumentar el área de tierra orgánica de 450 a 1200 hectáreas, manteniendo altos rendimientos. Es muy importante que todos los productos estén certificados según los estándares de la UE y Suiza.',
+            'testimonial-text-7-2': 'Apreciamos especialmente su enfoque científico para la protección biológica de las plantas y los fertilizantes orgánicos. El laboratorio CROPIA desarrolla constantemente nuevas fórmulas de preparaciones microbiológicas adaptadas a nuestros suelos y cultivos. Gracias a esto, nuestros campos tienen una microflora equilibrada, lo que aumenta la resistencia de las plantas a enfermedades y plagas. Esto nos permite producir productos de la más alta calidad para los exigentes mercados europeos, lo que nos ha dado acceso a segmentos premium del mercado con una prima de hasta un 40% sobre el precio estándar."',
             'news3-date': '28 de abril de 2025',
             'news3-desc': 'Durante la ley marcial, el estado introdujo beneficios adicionales para los agricultores: alivio fiscal, préstamos simplificados y apoyo logístico. Esto permite a los productores agrícolas mantener la estabilidad, desarrollar sus explotaciones y abastecer de alimentos al país incluso en condiciones difíciles....',
             'news3-link': 'Leer más',
