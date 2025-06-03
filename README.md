@@ -1,6 +1,6 @@
 # CROPIA - Корпоративний сайт аграрної компанії
 
-![Логотип CROPIA](./src/img/icons/icons.png)
+![Логотип CROPIA](./src/img/logo/logo.png)
 
 > Даний проєкт реалізовано в рамках кваліфікаційної роботи з використанням макету, розробленого у середовищі Figma: [Corporate-Website-Agro-Company](https://www.figma.com/design/JS02rgYaXwKnJOtrwB6T94/Corporate-Website-Agro-Company?node-id=0-1&p=f&t=TA0kBzduMB9DdDlF-0)
 
